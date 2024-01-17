@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "fab10d69-4821-4ca4-ab41-b8cf69512e40",
+		"name": "Todos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11210975"
+	},
+	"item": [
+		{
+			"name": "getTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "getTodosByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/todos/ef03d3b5-0494-43e5-b9e6-307c9d793ff0"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"testing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "EditTodoByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"testing\",\n\t\"description\":\"\",\n\t\"isCompleted\":true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/todos/ef03d3b5-0494-43e5-b9e6-307c9d793ff0"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodoByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/todos/3ca4e90d-97fd-4445-b824-f5d91a6981df"
+			},
+			"response": []
+		}
+	]
+}
